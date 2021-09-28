@@ -68,11 +68,6 @@ dataModel.findByIdAndUpdate(id,{name,image,price},(erorr,result) => {
         }
         else {res.send(result)}
     })
-    if (erorr) {
-        console.log(erorr);
-    }
-    else {res.send(result)}
-
 })
 } 
 
@@ -88,10 +83,6 @@ dataModel.deleteOne({_id,id},(erorr,result) => {
         }
         else {res.send(result)}
     })
-    if (erorr) {
-        console.log(erorr);
-    }
-    else {res.send(result)}
 
 })
 } 
